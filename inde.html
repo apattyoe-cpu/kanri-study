@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>管理栄養士クイズ</title>
+    <style>
+        body { font-family: sans-serif; text-align: center; padding: 20px; background: #f4f7f6; }
+        .card { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); max-width: 400px; margin: auto; }
+        button { background: #4CAF50; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; margin: 5px; }
+        #result { font-weight: bold; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>管理栄養士 一問一答</h2>
+        <div id="question">問題を読み込み中...</div>
+        <hr>
+        <button onclick="checkAnswer(true)">◯</button>
+        <button onclick="checkAnswer(false)">×</button>
+        <div id="result"></div>
+        <button id="next-btn" style="display:none;" onclick="loadQuestion()">次の問題へ</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
